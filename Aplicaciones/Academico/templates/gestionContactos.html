@@ -9,7 +9,7 @@
         <h2>AGREGAR CONTACTO</h2>
         <div class="card">
             <div class="card-body">
-                <form action="/registrarContacto/" method="POST">{% csrf_token %}
+                <form action="/alexander/registrarContacto/" method="POST">{% csrf_token %}
                     <div class="form-group py-2">
                         <input type="text" id="txtCedula" name="txtCedula" class="form-control" placeholder="Cédula"
                             minlength="10" maxlength="10" required>
@@ -75,8 +75,8 @@
                     <td>{{c.apellido}}</td>
                     <td>{{c.correo}}</td>
                     <td>{{c.telefono}}</td>
-                    <td><a href="edicionContacto/{{c.cedula}}" class="btn btn-info">Editar</a></td>
-                    <td><a href="eliminarContacto/{{c.cedula}}" class="btn btn-danger btnEliminacion">Eliminar</a></td> 
+                    <td><a href="alexander/edicionContacto/{{c.cedula}}" class="btn btn-info">Editar</a></td>
+                    <td><a href="alexander/eliminarContacto/{{c.cedula}}" class="btn btn-danger btnEliminacion">Eliminar</a></td> 
                 </tr>
                 {% endfor %}
             </tbody>

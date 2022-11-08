@@ -9,7 +9,7 @@
         <h2>AGREGAR NOTA</h2>
         <div class="card">
             <div class="card-body">
-                <form action="/registrarNota/" method="POST">{% csrf_token %}
+                <form action="/alexander/registrarNota/" method="POST">{% csrf_token %}
 
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label"
@@ -78,8 +78,8 @@
                     <td>{{n.titulo}}</td>
                     <td>{{n.contenido}}</td>
                     
-                    <td><a href="edicionNotas/{{n.id}}" class="btn btn-info">Editar</a></td>
-                    <td><a href="eliminarNotas/{{n.id}}" class="btn btn-danger btnEliminacion">Eliminar</a></td> 
+                    <td><a href="alexander/edicionNotas/{{n.id}}" class="btn btn-info">Editar</a></td>
+                    <td><a href="alexander/eliminarNotas/{{n.id}}" class="btn btn-danger btnEliminacion">Eliminar</a></td> 
                 </tr>
                 {% endfor %}
             </tbody>

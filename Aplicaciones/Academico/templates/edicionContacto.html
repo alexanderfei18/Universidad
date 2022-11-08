@@ -8,7 +8,7 @@
         <h2>EDITAR CONTACTO</h2>
         <div class="card">
             <div class="card-body">
-                <form action="/editarContacto/" method="POST">{% csrf_token %}
+                <form action="/alexander/editarContacto/" method="POST">{% csrf_token %}
                     <div class="form-group">
                         <input type="text" id="txtCedula" name="txtCedula" value="{{contacto.cedula}}" class="form-control" placeholder="Cédula"
                             minlength="10" maxlength="10" required>
