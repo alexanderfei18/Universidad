@@ -23,7 +23,7 @@ def registrarNota(request):
 
     nota = Notas.objects.create( contacto=contacto,titulo=titulo, contenido=contenido)
     messages.success(request, '¡NOTA Agregada Correctamente!')
-    return redirect('/notas')  
+    return redirect('/alexander/notas')  
 
 
 def edicionNota(request, id):
@@ -47,7 +47,7 @@ def editarNota(request):
 
     messages.success(request, '¡Nota Actualizada Correctamente!')
 
-    return redirect('/notas') 
+    return redirect('/alexander/notas') 
 
     
 
@@ -57,4 +57,4 @@ def eliminarNota(request, id):
 
      messages.success(request, '¡Nota Eliminada Correctamente!')
 
-     return redirect('/notas')  
+     return redirect('/alexander/notas')  

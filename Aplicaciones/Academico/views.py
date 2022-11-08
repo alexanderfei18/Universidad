@@ -19,7 +19,7 @@ def registrarContacto(request):
 
     contacto = Contacto.objects.create(cedula=cedula, nombre=nombre, apellido=apellido, correo=correo, telefono=telefono)
     messages.success(request, '¡Contacto Agregado Correctamente!')
-    return redirect('/')  
+    return redirect('/alexander')  
 
 
 def edicionContacto(request, cedula):
@@ -44,7 +44,7 @@ def editarContacto(request):
 
     messages.success(request, '¡Contacto Actualizado Correctamente!')
 
-    return redirect('/') 
+    return redirect('/alexander') 
 
     
 
@@ -54,4 +54,4 @@ def eliminarContacto(request, cedula):
 
     messages.success(request, '¡Contacto Eliminado Correctamente!')
 
-    return redirect('/')  
+    return redirect('/alexander')  
